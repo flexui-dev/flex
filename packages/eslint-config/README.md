@@ -1,3 +1,3 @@
-# `@turbo/eslint-config`
+# `@flex/eslint-config`
 
 Collection of internal eslint configurations.
