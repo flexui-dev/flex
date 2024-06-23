@@ -10,10 +10,10 @@ export default await af(
 		stylistic: {
 			quotes: 'single',
 		},
+		jsonc: true,
 		ignores: [
 			'**/dist',
 			'**/__fixtures__',
-			'eslint.config.js',
 		],
 		overrides: {
 			typescript: {

@@ -20,6 +20,10 @@
   "files": [
     "base.config.mjs"
   ],
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "pnpm run lint -- --fix"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
     "eslint": "^8.57.0",

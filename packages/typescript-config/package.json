@@ -17,5 +17,15 @@
   "publishConfig": {
     "provenance": true,
     "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "pnpm run lint -- --fix"
+  },
+  "devDependencies": {
+    "@flex/eslint-config": "workspace:*",
+    "@antfu/eslint-config": "^2.21.1",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3"
   }
 }
