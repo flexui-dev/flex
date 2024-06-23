@@ -1,5 +1,5 @@
 // @ts-check
-import af from '@antfu/eslint-config';
+import af, { GLOB_JSX, GLOB_TSX } from '@antfu/eslint-config';
 
 /* Using custom configuration of Antfu's code style */
 export default await af(
@@ -8,6 +8,7 @@ export default await af(
 			tsconfigPath: 'tsconfig.json',
 		},
 		stylistic: {
+			indent: 'tab',
 			quotes: 'single',
 		},
 		jsonc: true,
@@ -25,14 +26,17 @@ export default await af(
 	},
 	{
 		rules: {
-			'style/indent': ['error', 'tab', {
-				SwitchCase: 1,
-			}],
 			'style/no-tabs': ['error', { allowIndentationTabs: true }],
 			'style/no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
-			'style/array-bracket-newline': ['error', { multiline : true }],
+			'style/array-bracket-newline': ['error', { multiline: true }],
 			'style/array-element-newline': ['error', 'consistent'],
 			'style/semi': ['error', 'always'],
+		},
+	},
+	{
+		files: [GLOB_JSX, GLOB_TSX],
+		rules: {
+			'style/jsx-indent-props': ['error', 'tab'],
 		},
 	},
 	{

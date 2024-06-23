@@ -3,8 +3,6 @@
  */
 
 // @ts-check
-import base from './base.config.mjs'
+import base from './base.config.mjs';
 
-export default [
-	...await base
-];
+export default [...await base];
