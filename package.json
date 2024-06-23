@@ -1,6 +1,21 @@
 {
   "name": "flex",
-  "private": true,
+  "author": "Kevin Taeyoon Jin <hello@kevintyj.com>",
+  "license": "BSD-3-Clause",
+  "private": false,
+  "homepage": "https://github.com/flexui-dev/flex#readme",
+  "repository": "github:flexui-dev/flex",
+  "bugs": {
+    "url": "https://github.com/flexui-dev/flex/issues"
+  },
+  "keywords": [
+    "flex",
+    "framework-agnostic",
+    "accessibility"
+  ],
+  "publishConfig": {
+    "provenance": true
+  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
