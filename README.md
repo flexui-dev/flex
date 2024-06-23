@@ -1,4 +1,6 @@
-# Flex 
+# Flex
+
+---
 
 ## Quick Start 
 ```sh
@@ -8,8 +10,8 @@ pnpm i
 ### Apps and Packages
 
 - `@repo/ui`: a stub React component library (sample from Turborepo)
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@repo/eslint-config`: `eslint` configurations 
+- `@repo/typescript-config`: `tsc` configurations 
 
 ### Utilities
 
