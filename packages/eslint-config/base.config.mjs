@@ -1,8 +1,8 @@
 // @ts-check
-const af = require('@antfu/eslint-config').default
+import af from '@antfu/eslint-config';
 
-/* Using custom configuration of Antfu's code style: https://github.com/antfu/eslint-config */
-module.exports = af(
+/* Using custom configuration of Antfu's code style */
+export default await af(
 	{
 		typescript: {
 			tsconfigPath: 'tsconfig.json',
@@ -36,7 +36,7 @@ module.exports = af(
 		},
 	},
 	{
-		files: ['tsconfig.json', 'package.json'],
+		files: ['tsconfig.json', 'tsconfig.lint.json', 'package.json'],
 		rules: {
 			'jsonc/sort-keys': 'off',
 		},

@@ -18,7 +18,7 @@
     "provenance": true
   },
   "files": [
-    "core.js"
+    "base.config.mjs"
   ],
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
